@@ -1,5 +1,7 @@
 .features {
   margin-bottom: 49px;
+  display: flex;
+  justify-content: center;
 }
 
 .features__content-wrapper {
@@ -31,6 +33,9 @@
   line-height: 18px;
   margin: 0;
   padding: 0;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
 }
 
 .features__item--ingridients {

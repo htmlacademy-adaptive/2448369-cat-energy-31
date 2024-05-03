@@ -1,7 +1,63 @@
+.main-header {
+  position: relative;
+}
+
+.main-header::before {
+  position: absolute;
+  content: "";
+  min-width: 100%;
+  height: 1px;
+  background-color: #e6e6e6;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+}
+
 .main-header__content-wrapper {
   display: flex;
-  min-width: 280px;
   padding: 13px 20px;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+}
+
+.main-header__link {
+  display: block;
+}
+
+.main-header__toggle {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  right: 20px;
+}
+
+.main-header__toggle::before,
+.main-header__toggle::after,
+.main-header__toggle i {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: $base-color-black;
+  transition: transform 0.3s ease;
+}
+
+.main-header__toggle::before {
+  top: 0;
+  transform-origin: left center;
+}
+
+.main-header__toggle::after {
+  top: 50%;
+  transform: translateY(-50%);
+  transform-origin: left center;
+}
+
+.main-header__toggle-iconline {
+  top: 100%;
+  transform: translateY(-100%);
+  transform-origin: left center;
 }

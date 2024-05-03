@@ -29,30 +29,28 @@
       <a class="main-header__link main-header__link--text" href="index.html">
         <img class="main-header__logo-text" src="images/logo-text.svg" width="101" height="18" alt="логотип Cat Energy">
       </a>
+      <button class="main-header__toggle" type="button">
+        <i class="main-header__toggle-iconline"></i>
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
       <nav class="main-navigation">
-        <button class="main-navigation__toggle" type="button">
-          <i class="main-navigation__toggle-iconline"></i>
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <div class="main-navigation__wrapper">
-          <ul class="main-navigation__list ">
-            <li class="main-navigation__item">
-              <a class="main-navigation__link main-navigation__link--current" href="index.html">
-                Главная
-              </a>
-            </li>
-            <li class="main-navigation__item ">
-              <a class="main-navigation__link" href="catalog.html">
-                Каталог продукции
-              </a>
-            </li>
-            <li class="main-navigation__item ">
-              <a class="main-navigation__link" href="#">
-                Подбор программы
-              </a>
-            </li>
-          </ul>
-        </div>
+        <ul class="main-navigation__list ">
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="index.html">
+              Главная
+            </a>
+          </li>
+          <li class="main-navigation__item">
+            <a class="main-navigation__link main-navigation__link--current" href="#">
+              Каталог продукции
+            </a>
+          </li>
+          <li class="main-navigation__item ">
+            <a class="main-navigation__link" href="#">
+              Подбор программы
+            </a>
+          </li>
+        </ul>
       </nav>
     </div>
   </header>
@@ -484,6 +482,16 @@
 
     </div>
   </footer>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const menuToggle = document.querySelector(".main-header__toggle");
+      const menu = document.querySelector(".main-navigation");
+
+      menuToggle.addEventListener("click", function () {
+        menu.classList.toggle("main-navigation--open");
+      });
+    });
+  </script>
 </body>
 
 </html>

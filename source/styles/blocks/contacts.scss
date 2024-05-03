@@ -1,18 +1,37 @@
+
 .contacts__content-wrapper {
   margin: 0;
   padding: 26px 20px;
   display: flex;
+  flex-direction: row;
+  // gap: 10px;
+  justify-content: space-between;
 }
 
 .contacts__invite {
+  margin: 0;
+  display: block;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: #111111;
   text-transform: uppercase;
+  max-width: 163px;
+  text-align: left;
 }
 
 .contacts__address {
+  margin: 0;
+  display: block;
   font-size: 14px;
   line-height: 20px;
+  max-width: 157px;
+  text-align: right;
+}
+
+.contacts__location {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
 }
