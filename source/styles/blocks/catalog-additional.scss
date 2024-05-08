@@ -9,8 +9,9 @@
   font-size: 24px;
   line-height: 24px;
   color: $base-color-black;
-  margin-bottom: 49px;
   position: relative;
+  border-bottom: solid 1px #cdcdcd;
+  padding-bottom: 36px;
 }
 
 .catalog-additional__title::before {
@@ -29,7 +30,7 @@
   min-height: 290px;
   background-image: url("../../images/additionalpromo-bg-mobile@1x.jpg");
   background-color: $bg-basic-green;
-  background-size: fit;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;

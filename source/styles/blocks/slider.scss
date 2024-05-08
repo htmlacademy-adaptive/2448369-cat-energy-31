@@ -17,6 +17,10 @@
     mask-position: center;
     mask-repeat: no-repeat;
   }
+
+  &:hover::before {
+    background-color: $bg-basic-green;
+  }
 }
 
 // :hover, :focus, :active
