@@ -38,3 +38,63 @@
 .main-navigation--open {
   display: block;
 }
+
+@media (min-width: $tablet-width) {
+  .main-navigation {
+    display: flex;
+    position: unset;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+    z-index: 0;
+    background-color: transparent;
+  }
+
+  .main-navigation__list {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 33px;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .main-navigation__item {
+    display: flex;
+    border-bottom: none;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    line-height: 24px;
+    flex: 0;
+    white-space: nowrap;
+  }
+
+  .main-navigation__link {
+    position: relative;
+  }
+
+  .main-navigation__link[aria-current="page"]::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    right: 0;
+    bottom: -10px;
+    height: 2px;
+    background-color: $bg-basic-green;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .main-navigation {
+    z-index: 0;
+    background-color: transparent;
+  }
+
+  .main-navigation__item {
+    font-size: 20px;
+    line-height: 30px;
+    // color: $base-color-white;
+  }
+}

@@ -8,6 +8,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
 }
 
 .programs__list {
@@ -17,6 +21,15 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    gap: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    gap: 80px;
+  }
 }
 
 .programs__card {
@@ -24,6 +37,15 @@
   padding: 30px 20px 18px;
   min-width: 100%;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding: 77px 50px 53px 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 570px;
+    padding: 77px 60px 55px 52px;
+  }
 }
 
 
@@ -38,6 +60,20 @@
   text-align: center;
   margin-bottom: 29px;
   margin-left: 21px;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 0;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+    margin-bottom: 73px;
+  }
 }
 
 .programs__card-description {
@@ -48,6 +84,18 @@
   position: relative;
   border-bottom: solid 1px #d9d9d9;
   padding-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+    padding-bottom: 0;
+    max-width: 55%;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 100%;
+  }
 }
 
 .programs__card-link {
@@ -59,12 +107,17 @@
   text-align: center;
   text-decoration: none;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .programs__card-link::before {
   content: "";
   position: absolute;
-  left: 102px;
+  left: 122px;
   top: 50%;
   transform: translateY(-50%);
   width: 18px;
@@ -75,7 +128,7 @@
 .programs__card-link::after {
   content: "";
   position: absolute;
-  left: 117px;
+  left: 137px;
   top: 50%;
   transform: translateY(-50%);
   width: 0;
@@ -99,6 +152,21 @@
   top: 21px;
   left: 24px;
   z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    width: 140px;
+    height: 194px;
+    top: 47%;
+    transform: translateY(-50%);
+    left: 66%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 70px;
+    height: 97px;
+    top: 73px;
+    left: 67px;
+  }
 }
 
 .programs__card--fit::after {
@@ -110,6 +178,21 @@
   background-color: $bg-basic-green;
   top: 24px;
   left: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 200px;
+    height: 200px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 62%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100px;
+    height: 100px;
+    top: 77px;
+    left: 52px;
+  }
 }
 
 .programs__card--muscles::before {
@@ -122,6 +205,21 @@
   top: 35px;
   left: 12px;
   z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    width: 268px;
+    height: 112px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 57%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 134px;
+    height: 56px;
+    top: 77px;
+    left: 31px;
+  }
 }
 
 .programs__card--muscles::after {
@@ -133,4 +231,19 @@
   background-color: $bg-basic-green;
   top: 24px;
   left: 21px;
+
+  @media (min-width: $tablet-width) {
+    width: 200px;
+    height: 200px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 62%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100px;
+    height: 100px;
+    top: 77px;
+    left: 52px;
+  }
 }

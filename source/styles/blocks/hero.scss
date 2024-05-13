@@ -3,10 +3,9 @@
     url("../../images/hero-bg-mobile@1x.jpg"),
     linear-gradient(to bottom, #63a63b 302px, transparent 122px);
   background-repeat: no-repeat;
-  background-size: fit;
+  background-size: auto;
   background-position: center top;
   width: 100%;
-
   margin-bottom: 20px;
 }
 
@@ -41,4 +40,80 @@
 .hero-image {
   display: block;
   margin-bottom: 16px;
+}
+
+@media (min-width: $tablet-width) {
+  .hero {
+    background-image: none;
+  }
+
+  .hero__content-wrapper {
+    padding: 65px 30px 0;
+    align-items: start;
+  }
+
+  .hero__title {
+    font-size: 60px;
+    line-height: 60px;
+    color: $base-color-black;
+    max-width: 500px;
+    text-align: left;
+    margin-left: 90px;
+    margin-bottom: 40px;
+    order: -3;
+  }
+
+  .hero__slogan {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    line-height: 20px;
+    color: $base-color-black;
+    max-width: 500px;
+    text-align: left;
+    margin-left: 90px;
+    margin-bottom: 50px;
+    order: -2;
+  }
+
+  .hero__button {
+    min-width: 200px;
+    max-width: 250px;
+    margin-left: 90px;
+    display: block;
+    order: -1;
+    z-index: 1;
+  }
+
+  .hero__image {
+    margin-top: -50px;
+    align-self: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hero {
+    background-image:
+      url("../../images/hero-bg-desktop@1x.jpg"),
+      linear-gradient(to left, #63a63b 50%, transparent 50%);
+
+    background-repeat: no-repeat;
+    background-size: auto; //??
+    background-position: 160% top; //??
+    // width: 100%;
+  }
+
+  .hero__content-wrapper {
+    min-height: 580px;
+    // display: flex;
+    // flex-direction: row;
+    position: relative;
+  }
+
+  .hero__image {
+    position: absolute;
+    left: 447px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
