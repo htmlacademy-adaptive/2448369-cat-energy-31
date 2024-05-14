@@ -104,6 +104,8 @@
   }
 
   .hero__content-wrapper {
+    padding: 110px 110px 0;
+
     min-height: 580px;
     // display: flex;
     // flex-direction: row;
@@ -112,8 +114,13 @@
 
   .hero__image {
     position: absolute;
-    left: 447px;
+    left: 500px;
     top: 50%;
     transform: translateY(-50%);
+  }
+
+  .hero__title {
+    margin-left: 80px;
+    margin-bottom: 40px;
   }
 }

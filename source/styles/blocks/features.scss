@@ -5,7 +5,17 @@
 }
 
 .features__content-wrapper {
+  width: 100%;
   padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+  }
+
 }
 
 .features__title {
@@ -16,6 +26,11 @@
   text-align: left;
   margin: 0;
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 
@@ -26,16 +41,38 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    flex-flow: row wrap;
+    padding-left: 0;
+    gap: 27px 153px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 0;
+    justify-content: space-between;
+  }
 }
 
-.features__description {
-  font-size: 14px;
-  line-height: 18px;
-  margin: 0;
-  padding: 0;
+.features__item {
   min-height: 60px;
   display: flex;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    min-width: 230px;
+    max-width: 270px;
+    min-height: 280px;
+    padding-top: 151px;
+    align-items: flex-start;
+  }
+}
+
+.features__description {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+  padding: 0;
 }
 
 .features__item--ingridients {
@@ -52,6 +89,13 @@
   left: -80px;
   top: 50%;
   transform: translateY(-50%);
+
+  @media (min-width: $tablet-width) {
+    min-width: 80px;
+    min-height: 80px;
+    left: 0;
+    top: 80px;
+  }
 }
 
 .features__item--form {
@@ -68,6 +112,13 @@
   left: -80px;
   top: 50%;
   transform: translateY(-50%);
+
+  @media (min-width: $tablet-width) {
+    min-width: 80px;
+    min-height: 80px;
+    left: 0;
+    top: 80px;
+  }
 }
 
 .features__item--diet {
@@ -84,6 +135,13 @@
   left: -80px;
   top: 50%;
   transform: translateY(-50%);
+
+  @media (min-width: $tablet-width) {
+    min-width: 80px;
+    min-height: 80px;
+    left: 0;
+    top: 80px;
+  }
 }
 
 .features__item--results {
@@ -100,6 +158,13 @@
   left: -80px;
   top: 50%;
   transform: translateY(-50%);
+
+  @media (min-width: $tablet-width) {
+    min-width: 80px;
+    min-height: 80px;
+    left: 0;
+    top: 80px;
+  }
 }
 
 // .features__item::marker {
