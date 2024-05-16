@@ -7,92 +7,12 @@
   background-position: center top;
   width: 100%;
   margin-bottom: 20px;
-}
 
-.hero__content-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  // padding: 27px 20px 0;
-}
-
-.hero__title {
-  margin: 0;
-  font-family: "Oswald", sans-serif;
-  font-size: 36px;
-  line-height: 36px;
-  text-align: center;
-  color: #ffffff;
-  margin-bottom: 25px;
-}
-
-.hero__slogan {
-  margin: 0;
-  font-family: "Oswald", sans-serif;
-  font-size: 14px;
-  line-height: 14px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #ffffff;
-  margin-bottom: 29px;
-}
-
-.hero-image {
-  display: block;
-  margin-bottom: 16px;
-}
-
-@media (min-width: $tablet-width) {
-  .hero {
+  @media (min-width: $tablet-width) {
     background-image: none;
   }
 
-  .hero__content-wrapper {
-    // padding: 65px 30px 0;
-    align-items: start;
-  }
-
-  .hero__title {
-    font-size: 60px;
-    line-height: 60px;
-    color: $base-color-black;
-    max-width: 500px;
-    text-align: left;
-    margin-left: 90px;
-    margin-bottom: 40px;
-    order: -3;
-  }
-
-  .hero__slogan {
-    margin: 0;
-    padding: 0;
-    font-size: 20px;
-    line-height: 20px;
-    color: $base-color-black;
-    max-width: 500px;
-    text-align: left;
-    margin-left: 90px;
-    margin-bottom: 50px;
-    order: -2;
-  }
-
-  .hero__button {
-    min-width: 200px;
-    max-width: 250px;
-    margin-left: 90px;
-    display: block;
-    order: -1;
-    z-index: 1;
-  }
-
-  .hero__image {
-    margin-top: -50px;
-    align-self: center;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .hero {
+  @media (min-width: $desktop-width) {
     background-image:
       image-set(
         url("../../images/hero-bg-desktop@1x.jpg") 1x,
@@ -104,25 +24,96 @@
     background-position: 160% top; //??
     // width: 100%;
   }
+}
 
-  .hero__content-wrapper {
-    // padding: 224px 110px 0;
+.hero__content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    min-height: 580px;
-    // display: flex;
-    // flex-direction: row;
-    position: relative;
+  @media (min-width: $tablet-width) {
+    align-items: start;
   }
 
-  .hero__image {
+  @media (min-width: $desktop-width) {
+    min-height: 580px;
+    position: relative;
+  }
+}
+
+.hero__title {
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    color: $base-color-black;
+    max-width: 500px;
+    text-align: left;
+    margin-left: 90px;
+    margin-bottom: 40px;
+    order: -3;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 80px;
+    margin-bottom: 40px;
+  }
+}
+
+.hero__slogan {
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    line-height: 20px;
+    color: $base-color-black;
+    max-width: 500px;
+    text-align: left;
+    margin-left: 90px;
+    margin-bottom: 50px;
+    order: -2;
+  }
+}
+
+.hero-image {
+  display: block;
+  margin-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -50px;
+  }
+
+  @media (min-width: $desktop-width) {
     position: absolute;
     left: 500px;
     top: 143px;
     margin: 0 auto;
   }
+}
 
-  .hero__title {
-    margin-left: 80px;
-    margin-bottom: 40px;
+.hero__button {
+  @media (min-width: $tablet-width) {
+    min-width: 200px;
+    max-width: 250px;
+    margin-left: 90px;
+    display: block;
+    order: -1;
+    z-index: 1;
   }
 }

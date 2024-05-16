@@ -2,6 +2,14 @@
   background-color: #eaeaea;
   display: flex;
   justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    background-image: linear-gradient(to bottom, $base-color-white 57%, #eaeaea 57%);
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: linear-gradient(to bottom, $base-color-white 23%, #eaeaea 23%);
+  }
 }
 
 .showcase__content-wrapper {
@@ -44,10 +52,10 @@
 }
 
 .showcase__facts {
-  margin: 0;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  gap: 32px;
+  justify-content: center;
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
@@ -58,10 +66,13 @@
 .showcase__fact {
   display: flex;
   flex-flow: column-reverse wrap;
-  gap: 7px;
   justify-content: center;
   border-top: 1px #cdcdcd;
   position: relative;
+}
+
+.showcase__fact:nth-child(1) {
+  margin-right: 32px;
 }
 
 .showcase__fact-term {
