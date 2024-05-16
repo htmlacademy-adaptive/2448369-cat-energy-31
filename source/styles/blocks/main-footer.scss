@@ -5,19 +5,19 @@
 
 .main-footer__content-wrapper {
   margin: 0;
-  padding: 40px 20px;
+  // padding: 40px 20px;
   display: flex;
   flex-flow: column wrap;
   gap: 20px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    padding: 55px 30px;
+    // padding: 55px 30px;
     justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 66px 110px;
+    // padding: 66px 110px;
   }
 }
 

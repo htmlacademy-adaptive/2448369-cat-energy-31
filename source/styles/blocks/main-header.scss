@@ -3,9 +3,18 @@
   border-bottom: solid 1px #e6e6e6;
 }
 
+.main-header--index {
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    content: "";
+    width: 100%;
+    z-index: 10;
+  }
+}
+
 .main-header__content-wrapper {
   display: flex;
-  padding: 13px 20px;
+  // padding: 13px 20px;
   align-items: center;
   justify-content: space-between;
 }
@@ -64,7 +73,7 @@
   .main-header__content-wrapper {
     display: flex;
     justify-content: unset;
-    padding: 25px 34px 0 30px;
+    // padding: 25px 34px 0 30px;
   }
 
   .main-header__link--image {
@@ -81,7 +90,7 @@
 @media (min-width: $desktop-width) {
   .main-header__content-wrapper {
     display: flex;
-    padding: 55px 110px 29px;
+    // padding: 55px 110px 29px;
   }
 
   .main-header__link--image {

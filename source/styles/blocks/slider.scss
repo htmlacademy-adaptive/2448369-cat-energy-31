@@ -4,12 +4,17 @@
 
 .slider {
   position: relative;
+
+  // @media (min-width: $desktop-width) {
+
+  //   grid-row: span 2;
+  // }
 }
 
 
 .slider__img {
-  width: 440px;
-  height: 300px;
+  max-width: 440px;
+  max-height: 300px;
 }
 
 .slider__cat-before {
@@ -20,8 +25,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 440px;
-  height: 300px;
+  max-width: 440px;
+  max-height: 300px;
   overflow: hidden;
 }
 
