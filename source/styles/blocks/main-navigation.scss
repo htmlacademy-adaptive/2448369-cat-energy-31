@@ -33,9 +33,25 @@
 .main-navigation__link {
   color: #000000;
   text-decoration: none;
+
+  &:hover {
+    opacity: 60%;
+  }
+
+  &:active {
+    opacity: 30%;
+  }
+}
+
+.main-navigation--closed {
+  display: none;
 }
 
 .main-navigation--open {
+  display: block;
+}
+
+.main-navigation--nojs {
   display: block;
 }
 

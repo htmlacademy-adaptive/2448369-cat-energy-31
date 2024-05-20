@@ -29,11 +29,11 @@
       <a class="main-header__link main-header__link--text" href="index.html">
         <img class="main-header__logo-text" src="images/logo-text.svg" width="101" height="18" alt="логотип Cat Energy">
       </a>
-      <button class="main-header__toggle" type="button">
-        <i class="main-header__toggle-iconline"></i>
+      <button class="main-header__toggle " type="button">
+        <i class="main-header__toggle--iconline"></i>
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <nav class="main-navigation">
+      <nav class="main-navigation main-navigation--closed">
         <ul class="main-navigation__list ">
           <li class="main-navigation__item">
             <a class="main-navigation__link  .main-navigation__link--index " href="#" aria-current="page">
@@ -161,13 +161,13 @@
           </dl>
         </div>
 
-        <div class="showcase-example">
+        <div class="showcase-example container">
           <div class="showcase-example__images slider">
             <picture>
               <source type="image/png" media="(min-width: 768px)" srcset="images/cat-after-tablet-desk@1x.png 1x, images/cat-after-tablet-desk@2x.png 2x" width="560" height="512">
               <img class="slider__img slider__cat-after" src="images/cat-after-mobile@1x.png" srcset="images/cat-after-mobile@2x.png 2x" width="280" height="256" alt="изображение кота после">
             </picture>
-            <div class=" slider__image-wrapper" style="width: 50%;">
+            <div class="slider__image-wrapper" style="width: 50%;">
               <picture>
                 <source type="image/png" media="(min-width: 768px)" srcset="images/cat-before-tablet-desk@1x.png 1x, images/cat-before-tablet-desk@2x.png 2x" width="560" height="512">
                 <img class="slider__img slider__cat-before" src="images/cat-before-mobile@1x.png" srcset="images/cat-before-mobile@2x.png 2x" width="280" height="256" alt="изображение кота до">
@@ -177,7 +177,8 @@
               <button class="slider__toggle" type="button">
                 <span class="slider__toggle-button visually-hidden">
                   Перетянуть слайдер
-                </span></button>
+                </span>
+              </button>
             </div>
           </div>
         </div>
@@ -249,16 +250,7 @@
 
     </div>
   </footer>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const menuToggle = document.querySelector(".main-header__toggle");
-      const menu = document.querySelector(".main-navigation");
-
-      menuToggle.addEventListener("click", function () {
-        menu.classList.toggle("main-navigation--open");
-      });
-    });
-  </script>
+  <script src="index.js"></script>
 </body>
 
 </html>

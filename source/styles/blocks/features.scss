@@ -2,6 +2,10 @@
   margin-bottom: 49px;
   display: flex;
   justify-content: center;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 69px;
+  }
 }
 
 .features__content-wrapper {
@@ -29,6 +33,11 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 32px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
   }
 }
 

@@ -1,7 +1,7 @@
 .showcase {
   background-color: #eaeaea;
-  display: flex;
-  justify-content: center;
+  // display: flex;
+  // justify-content: center;
 
   @media (min-width: $tablet-width) {
     background-image: linear-gradient(to bottom, $base-color-white 57%, #eaeaea 57%);
@@ -13,11 +13,8 @@
 }
 
 .showcase__content-wrapper {
-  // padding: 25px 20px 40px;
-
-  @media (min-width: $tablet-width) {
-    // padding: 45px 30px 0;
-  }
+  padding-top: 25px;
+  padding-bottom: 40px;
 
   @media (min-width: $desktop-width) {
     display: grid;
@@ -49,6 +46,7 @@
   line-height: 18px;
   margin: 0;
   margin-bottom: 20px;
+
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -82,11 +80,13 @@
 }
 
 .showcase__fact {
+  width: fit-content;
   display: flex;
   flex-flow: column-reverse wrap;
   justify-content: center;
   border-top: 1px #cdcdcd;
   position: relative;
+  min-width: 124px;
 }
 
 .showcase__fact:nth-child(1) {
@@ -114,12 +114,18 @@
   @media (min-width: $tablet-width) {
     font-size: 14px;
     line-height: 14px;
+    background-color: $base-color-white;
+    padding: 0 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: #eaeaea;
   }
 }
 
 .showcase__fact-description {
   margin: 0;
-  padding: 15px 42px 17px;
+  padding: 15px 20px 17px;
   font-family: "Oswald", sans-serif;
   font-size: 24px;
   line-height: 24px;
