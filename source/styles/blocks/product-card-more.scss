@@ -4,33 +4,45 @@
   padding: 25px 20px;
   align-items: center;
   position: relative;
-  border-bottom: solid 1px #ebebeb;
 
   @media (min-width: $tablet-width) {
-    padding: 0 37px 40px;
-    border-bottom: none;
+    padding: 0;
     width: 324px;
     display: grid;
-    // grid-template-columns: 1fr;
-    // grid-template-rows: 210px 157px 40px;
-    row-gap: 22px;
-    border: solid 2px #f2f2f2;
+    grid-template-columns: 1fr;
     background-image: none;
     background-color: transparent;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 38px 40px;
+    // padding: 0 38px 40px;
     width: 245px;
   }
 }
 
 .product-card-more__wrapper {
+  display: flex;
+  flex-flow: column wrap;
+  padding: 25px 20px;
+  align-items: center;
+  position: relative;
+
   @media (min-width: $tablet-width) {
-    display: flex;
-    flex-flow: column wrap;
-    padding: 0;
-    margin: 0;
+    align-items: center;
+    padding: 0 37px 40px;
+    background-color: transparent;
+    // margin-top: 82px;
+    row-gap: 22px;
+    border-bottom: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 324px;
+    border: solid 2px #f2f2f2;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 38px 40px;
+    width: 245px;
   }
 }
 
@@ -46,11 +58,13 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 24px;
-    margin: 0;
     padding: 0;
-
+    grid-row: 2;
+    max-width: 150px;
     text-align: center;
-    grid-row: 2 / 3;
+    margin: 0 auto;
+    margin-bottom: 0;
+    grid-column: 1 / -1;
   }
 }
 
@@ -61,23 +75,30 @@
   margin-bottom: 21px;
 
   @media (min-width: $tablet-width) {
-    font-size: 16px;
-    line-height: 18px;
     margin: 0;
     padding: 0;
+    grid-row: 3;
+    font-size: 16px;
+    line-height: 20px;
+    grid-column: 1 / -1;
   }
 }
 
 .product-card-more__button {
+  display: block;
   position: relative;
   border: none;
   outline: none;
   width: 30px;
   height: 30px;
   background-color: transparent;
+  margin: 0 auto;
   margin-bottom: 23px;
 
   @media (min-width: $tablet-width) {
+    grid-row: 1;
+    grid-column: 1 / 2;
+
     width: 60px;
     height: 60px;
   }

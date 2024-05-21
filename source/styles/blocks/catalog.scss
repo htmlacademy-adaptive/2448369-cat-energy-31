@@ -14,14 +14,13 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    gap: 142px 60px;
+    gap: 60px;
     justify-content: center;
   }
 
   @media (min-width: $desktop-width) {
-
     justify-content: flex-start;
-    gap: 143px 80px;
+    gap: 63px 80px;
   }
 }
 
