@@ -58,7 +58,7 @@
     border-bottom: none;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 128px 48px 94px 40px;
+    grid-template-rows: minmax(128px, auto) minmax(48px, auto) minmax(94px, auto) minmax(40px, auto);
     row-gap: 22px;
   }
 
@@ -114,7 +114,6 @@
     max-width: 150px;
     text-align: center;
     margin: 0 auto;
-    margin-bottom: 20px;
     grid-column: 1 / -1;
   }
 }
@@ -132,10 +131,6 @@
     font-size: 16px;
     line-height: 20px;
     grid-column: 1 / -1;
-
-    @media (min-width: $tablet-width) {
-      margin-bottom: 37px;
-    }
   }
 }
 

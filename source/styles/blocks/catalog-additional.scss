@@ -5,6 +5,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     gap: 80px;
+    align-items: center;
   }
 }
 
@@ -56,7 +57,10 @@
 .catalog-additional__promo {
   min-width: 280px;
   min-height: 290px;
-  background-image: url("../../images/additionalpromo-bg-mobile@1x.jpg");
+  background-image:
+    image-set(
+      url("../../images/additionalpromo-bg-mobile@1x.jpg") 1x,
+      url("../../images/additionalpromo-bg-mobile@2x.jpg") 2x);
   background-color: $bg-basic-green;
   background-size: cover;
   background-repeat: no-repeat;
@@ -66,13 +70,17 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    min-height: 200px;
-    width: auto;
+    min-height: unset;
+    height: 200px;
+    min-width: auto;
+    padding: 0 30px;
+    display: flex;
+    justify-content: flex-end;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 245px;
-    min-height: auto;
+    width: 245px;
+    height: 288px;
   }
 }
 
@@ -85,6 +93,21 @@
   left: 50%;
   transform: translateX(-50%);
   top: 58px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 80px;
+    min-height: 82px;
+    left: 77px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 83px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 56px;
+  }
 }
 
 .catalog-additional__promo-titile {
@@ -94,6 +117,21 @@
   text-align: center;
   color: $base-color-white;
   padding-top: 187px;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    padding-top: 71px;
+    width: 161px;
+    text-align: left;
+    margin-right: 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
+    text-align: center;
+    padding-top: 185px;
+    margin: 0 auto;
+  }
 }
 
 .catalog-additional__list {
