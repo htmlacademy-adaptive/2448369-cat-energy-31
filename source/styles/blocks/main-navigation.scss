@@ -67,6 +67,7 @@
     background-color: transparent;
     width: unset;
     margin-left: auto;
+    max-width: 605px;
   }
 
   .main-navigation__list {
@@ -110,6 +111,8 @@
     z-index: 10;
     background-color: transparent;
     color: $base-color-white;
+
+    max-width: 605px;
   }
 
   .main-navigation__item {

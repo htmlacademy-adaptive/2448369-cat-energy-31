@@ -4,7 +4,7 @@
   margin: 0 auto;
 
   @media (min-width: $desktop-width) {
-
-    grid-area: span 2 / 2 / 2 / 3;
+    grid-column: 2 / 3;
+    grid-row: 1 / span 3;
   }
 }

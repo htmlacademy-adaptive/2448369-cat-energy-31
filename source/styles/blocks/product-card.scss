@@ -55,11 +55,14 @@
     padding: 0 37px 40px;
 
     margin-top: 82px;
+    height: calc(100% - 82px);
     border-bottom: none;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: minmax(128px, auto) minmax(48px, auto) minmax(94px, auto) minmax(40px, auto);
+    grid-template-columns: unset;
+    grid-template-rows: auto 1fr;
     row-gap: 22px;
+    align-items: start;
+    justify-content: center;
   }
 
   @media (min-width: $desktop-width) {
@@ -76,7 +79,10 @@
   grid-row: 1 / span 2;
 
   @media (min-width: $tablet-width) {
+    height: 210px;
     margin-top: -125px;
+    grid-column: 1;
+    grid-row: unset;
   }
 }
 
