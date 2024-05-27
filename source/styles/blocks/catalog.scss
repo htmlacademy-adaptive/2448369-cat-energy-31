@@ -2,10 +2,6 @@
   margin-bottom: 74px;
 }
 
-// .catalog__content-wrapper {
-//   // padding: 0 20px;
-// }
-
 .catalog__list {
   list-style: none;
   margin: 0;
@@ -25,7 +21,8 @@
 }
 
 .catalog__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", sans-serif, "Arial";
+  font-weight: 400;
   font-size: 36px;
   line-height: 36px;
   color: #111111;

@@ -61,7 +61,8 @@
 .programs__card-title {
   margin: 0;
   padding: 0;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", sans-serif, "Arial";
+  font-weight: 400;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
@@ -109,7 +110,8 @@
 }
 
 .programs__card-link {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", sans-serif, "Arial";
+  font-weight: 400;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
@@ -131,18 +133,17 @@
 .programs__card-link::before {
   content: "";
   position: absolute;
-  right: -25px;
+  left: calc(100% + 8px);
   top: 50%;
   transform: translateY(-50%);
   width: 18px;
   height: 2px;
   background-color: $base-color-black;
-  transition: width 0.5s ease, transform 0.5s ease;
+  transition: width 0.5s ease;
 }
 
 .programs__card-link:hover::before {
   width: 26px;
-  transform: translate(8px, -50%);
 }
 
 .programs__card-link:active::before {
@@ -152,7 +153,7 @@
 .programs__card-link::after {
   content: "";
   position: absolute;
-  right: -25px;
+  left: calc(100% + 8px + 18px);
   top: 50%;
   transform: translateY(-50%);
   width: 0;
@@ -160,11 +161,11 @@
   border-top: 5px solid transparent;
   border-bottom: 5px solid transparent;
   border-left: 5px solid $base-color-black;
-  transition: width 0.5s ease, transform 0.5s ease;
+  transition: transform 0.5s ease;
 }
 
 .programs__card-link:hover::after {
-  transform: translate(10px, -50%);
+  transform: translate(8px, -50%);
 }
 
 .programs__card-link:active::after {

@@ -1,7 +1,7 @@
 .product-card-more {
   display: flex;
   flex-flow: column wrap;
-  padding: 25px 20px;
+  padding: 25px 0 20px;
   align-items: center;
   position: relative;
 
@@ -25,6 +25,7 @@
   flex-flow: column wrap;
   align-items: center;
   position: relative;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     align-items: center;
@@ -46,7 +47,8 @@
 
 .product-card-more__title {
   margin: 0;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", sans-serif, "Arial";
+  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   color: $base-color-black;
