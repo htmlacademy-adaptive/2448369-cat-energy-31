@@ -1,7 +1,11 @@
 .hero {
   background-image:
-    url("../../images/hero-bg-mobile@1x.jpg"),
-    linear-gradient(to bottom, #63a63b 302px, transparent 122px);
+    image-set(
+      url("../../images/hero-bg-mobile@1x.webp") 1x,
+      url("../../images/hero-bg-mobile@2x.webp") 2x,
+      url("../../images/hero-bg-mobile@1x.jpg") 1x,
+      url("../../images/hero-bg-mobile@2x.jpg") 2x,
+      linear-gradient(to bottom, #63a63b 302px, transparent 122px));
   background-repeat: no-repeat;
   background-size: auto;
   background-position: center top;
@@ -16,6 +20,8 @@
     background: linear-gradient(to left, #63a63b 50%, transparent 50%);
     background-image:
       image-set(
+        url("../../images/hero-bg-desktop@1x.webp") 1x,
+        url("../../images/hero-bg-desktop@2x.webp") 2x,
         url("../../images/hero-bg-desktop@1x.jpg") 1x,
         url("../../images/hero-bg-desktop@2x.jpg") 2x),
       linear-gradient(to left, #63a63b 50%, transparent 50%);

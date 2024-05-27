@@ -69,6 +69,8 @@
   min-height: 290px;
   background-image:
     image-set(
+      url("../../images/additionalpromo-bg-mobile@1x.webp") 1x,
+      url("../../images/additionalpromo-bg-mobile@2x.webp") 2x,
       url("../../images/additionalpromo-bg-mobile@1x.jpg") 1x,
       url("../../images/additionalpromo-bg-mobile@2x.jpg") 2x);
   background-color: $bg-basic-green;
@@ -89,6 +91,8 @@
     justify-content: flex-end;
     background-image:
       image-set(
+        url("../../images/additionalpromo-bg-tablet@1x.webp") 1x,
+        url("../../images/additionalpromo-bg-tablet@2x.webp") 2x,
         url("../../images/additionalpromo-bg-tablet@1x.jpg") 1x,
         url("../../images/additionalpromo-bg-tablet@2x.jpg") 2x);
   }
@@ -98,6 +102,8 @@
     height: 288px;
     background-image:
       image-set(
+        url("../../images/additionalpromo-bg-desktop@1x.webp") 1x,
+        url("../../images/additionalpromo-bg-desktop@2x.webp") 2x,
         url("../../images/additionalpromo-bg-desktop@1x.jpg") 1x,
         url("../../images/additionalpromo-bg-desktop@2x.jpg") 2x);
   }
