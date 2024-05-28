@@ -4,7 +4,7 @@
   // justify-content: center;
 
   @media (min-width: $tablet-width) {
-    background-image: linear-gradient(to bottom, $base-color-white 57%, #eaeaea 57%);
+    background-image: linear-gradient(to bottom, $base-color-white 619px, #eaeaea 619px);
   }
 
   @media (min-width: $desktop-width) {
@@ -15,6 +15,11 @@
 .showcase__content-wrapper {
   padding-top: 25px;
   padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 45px;
+    padding-bottom: 101px;
+  }
 
   @media (min-width: $desktop-width) {
     display: grid;
@@ -34,6 +39,7 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -52,6 +58,7 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
+    margin-bottom: 55px;
   }
 
   @media (min-width: $desktop-width) {
@@ -67,7 +74,8 @@
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
-    justify-content: space-around;
+    justify-content: flex-start;
+    margin-bottom: 106px;
   }
 
   @media (min-width: $desktop-width) {
@@ -88,10 +96,31 @@
   border-top: 1px #cdcdcd;
   position: relative;
   min-width: 124px;
+  margin: 0;
+  margin-bottom: 33px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 162px;
+    margin-bottom: 0;
+  }
 }
 
 .showcase__fact:nth-child(1) {
   margin-right: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 43px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+  }
+}
+
+.showcase__fact:nth-child(2) {
+  @media (min-width: $tablet-width) {
+    margin-right: 163px;
+  }
 
   @media (min-width: $desktop-width) {
     margin-right: 0;
@@ -104,19 +133,22 @@
   content: "";
   margin: 0;
   align-self: center;
-  bottom: -5px;
-  width: max-content;
+  bottom: -14px;
+  padding: 0 9px 0 7px;
   font-size: 12px;
   line-height: 12px;
   text-align: center;
   text-transform: lowercase;
   background-color: #eaeaea;
+  width: 77px;
 
   @media (min-width: $tablet-width) {
+    width: max-content;
     font-size: 14px;
     line-height: 14px;
     background-color: $base-color-white;
-    padding: 0 5px;
+    padding: 0 10px;
+    bottom: -6px;
   }
 
   @media (min-width: $desktop-width) {
@@ -152,15 +184,19 @@
   width: 100%;
   display: flex;
   flex-wrap: nowrap;
-  gap: 5px;
+  gap: 4px;
   justify-content: center;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
     font-size: 20px;
-    max-width: 174px;
+    max-width: 176px;
     text-align: right;
     margin-right: 0;
+    justify-content: flex-start;
+    padding-top: 10px;
+    gap: 10px;
   }
 
   @media (min-width: $desktop-width) {

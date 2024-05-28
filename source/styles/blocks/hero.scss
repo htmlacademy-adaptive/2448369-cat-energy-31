@@ -14,6 +14,7 @@
 
   @media (min-width: $tablet-width) {
     background-image: none;
+    margin-bottom: 62px;
   }
 
   @media (min-width: $desktop-width) {
@@ -40,7 +41,7 @@
 
   @media (min-width: $tablet-width) {
     align-items: start;
-    padding-top: 65px;
+    padding-top: 62px;
     min-height: 810px;
   }
 
@@ -58,7 +59,7 @@
   line-height: 36px;
   text-align: center;
   color: #ffffff;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -102,14 +103,13 @@
 
 .hero__image {
   display: block;
-  margin-bottom: 16px;
+  margin-bottom: 3px;
 
   @media (min-width: $tablet-width) {
     position: absolute;
     width: 709px;
     height: auto;
     top: 266px;
-    left: 0;
     z-index: -1;
   }
 
@@ -125,8 +125,13 @@
 
 .hero__button {
   @media (min-width: $tablet-width) {
-    min-width: 200px;
+    min-width: 244px;
     max-width: 250px;
+    min-height: 54px;
+    padding: 14px 10px;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 400px;
     margin-left: 90px;
     display: block;
     order: -1;

@@ -22,12 +22,13 @@
   align-items: center;
   justify-content: space-between;
   padding-top: 13px;
-  padding-bottom: 14px;
+  padding-bottom: 11px;
 
   @media (min-width: $tablet-width) {
     justify-content: unset;
     padding-top: 25px;
     padding-bottom: 0;
+    padding-right: 34px;
   }
 
   @media (min-width: $desktop-width) {
@@ -48,13 +49,15 @@
 }
 
 .main-header__toggle {
+  display: block;
   width: 24px;
-  height: 24px;
+  height: 19px;
   position: relative;
   cursor: pointer;
   border: none;
   background-color: transparent;
-  right: 20px;
+  // right: 13px;
+  padding: 4px 0;
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -70,22 +73,25 @@
   width: 100%;
   background-color: $base-color-black;
   transition: transform 0.3s ease;
+  left: 0;
 }
 
 .main-header__toggle::before {
-  top: 0;
+  top: -2px;
   transform-origin: left center;
 }
 
 .main-header__toggle::after {
-  top: 50%;
-  transform: translateY(-50%);
+  top: 6px;
+  // top: 50%;
+  // transform: translateY(-50%);
   transform-origin: left center;
 }
 
 .main-header__toggle-iconline {
-  top: 100%;
-  transform: translateY(-100%);
+  // top: 100%;
+  // transform: translateY(-100%);
+  top: 14px;
   transform-origin: left center;
 }
 
@@ -95,6 +101,10 @@
 
 .main-header__toggle:active {
   opacity: 30%;
+}
+
+.main-header__toggle--opened {
+  top: -4px;
 }
 
 .main-header__toggle--opened::before {
@@ -145,8 +155,14 @@
 }
 
 .main-header__link--text {
+  margin-right: 13px;
+
+  @media (min-width: $mobile-width-only) {
+    margin-right: 13px;
+  }
+
   @media (min-width: $tablet-width) {
     display: block;
-    // margin-right: 94px;
+    margin-right: unset;
   }
 }

@@ -35,12 +35,13 @@
   line-height: 20px;
   color: #111111;
   text-transform: uppercase;
-  max-width: 163px;
+  min-width: 140px;
   text-align: left;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 26px;
+    max-width: 200px;
   }
 }
 
@@ -56,7 +57,14 @@
     font-size: 16px;
     line-height: 20px;
     text-align: right;
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
   }
+}
+
+.contacts__address-details {
+  display: block;
 }
 
 .contacts__location {

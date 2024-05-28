@@ -3,6 +3,12 @@
   display: flex;
   justify-content: center;
 
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding-bottom: 46px;
+    border-bottom: solid 1px #e6e6e6;
+  }
+
   @media (min-width: $desktop-width) {
     margin-bottom: 69px;
   }
@@ -29,7 +35,7 @@
   color: $base-color-black;
   text-align: left;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 39px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -53,8 +59,8 @@
 
   @media (min-width: $tablet-width) {
     flex-flow: row wrap;
-    padding-left: 0;
-    gap: 27px 153px;
+    padding-left: unset;
+    gap: 37px 153px;
 
     counter-reset: features;
   }
@@ -71,8 +77,8 @@
   align-items: center;
 
   @media (min-width: $tablet-width) {
-    min-width: 230px;
-    max-width: 270px;
+    // min-width: 230px;
+    max-width: 230px;
     min-height: 280px;
     padding-top: 151px;
     align-items: flex-start;
@@ -96,14 +102,24 @@
 }
 
 .features__description {
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .features__item--ingridients {
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    max-width: 230px;
+  }
 }
 
 .features__item--ingridients::before {
@@ -122,11 +138,16 @@
     min-height: 80px;
     left: 0;
     top: 80px;
+    background-image: url("../../icons/stack.svg#features-ingridients-icon-tab");
   }
 }
 
 .features__item--form {
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    max-width: 246px;
+  }
 }
 
 .features__item--form::before {
@@ -145,11 +166,16 @@
     min-height: 80px;
     left: 0;
     top: 80px;
+    background-image: url("../../icons/stack.svg#features-form-icon-tab");
   }
 }
 
 .features__item--diet {
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    max-width: 247px;
+  }
 }
 
 .features__item--diet::before {
@@ -168,11 +194,17 @@
     min-height: 80px;
     left: 0;
     top: 80px;
+    background-image: url("../../icons/stack.svg#features-diet-icon-tab");
   }
 }
 
 .features__item--results {
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    max-width: 249px;
+    margin-left: -16px;
+  }
 }
 
 .features__item--results::before {
@@ -191,6 +223,7 @@
     min-height: 80px;
     left: 0;
     top: 80px;
+    background-image: url("../../icons/stack.svg#features-results-icon-tab");
   }
 }
 
