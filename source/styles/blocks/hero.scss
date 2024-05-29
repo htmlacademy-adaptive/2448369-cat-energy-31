@@ -29,6 +29,7 @@
     background-repeat: no-repeat;
     background-size: auto 694px;
     background-position: 50vw top;
+    margin-bottom: 82px;
   }
 }
 
@@ -99,6 +100,11 @@
     margin-bottom: 50px;
     order: -2;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 80px;
+    margin-bottom: 51px;
+  }
 }
 
 .hero__image {
@@ -139,8 +145,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-column: 1 / 2;
     font-size: 20px;
     line-height: 26px;
+    margin-left: 80px;
   }
 }

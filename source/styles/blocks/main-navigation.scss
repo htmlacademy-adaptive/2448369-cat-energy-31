@@ -92,6 +92,7 @@
 
   .main-navigation__link {
     position: relative;
+    display: block;
   }
 
   .main-navigation__link[aria-current="page"]::before {

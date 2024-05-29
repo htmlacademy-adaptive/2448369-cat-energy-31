@@ -20,6 +20,10 @@
     max-height: 512px;
     background-image: linear-gradient(to bottom, $base-color-white 150px, #eaeaea 150px);
   }
+
+  @media (min-width: $desktop-width) {
+    background-image: linear-gradient(to bottom, $base-color-white 137px, #eaeaea 137px);
+  }
 }
 
 .slider__cat-before {
