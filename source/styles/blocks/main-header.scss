@@ -85,14 +85,10 @@
 
 .main-header__toggle::after {
   top: 6px;
-  // top: 50%;
-  // transform: translateY(-50%);
   transform-origin: left center;
 }
 
 .main-header__toggle-iconline {
-  // top: 100%;
-  // transform: translateY(-100%);
   top: 14px;
   transform-origin: left center;
 }

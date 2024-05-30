@@ -1,7 +1,5 @@
 .showcase {
   background-color: #eaeaea;
-  // display: flex;
-  // justify-content: center;
 
   @media (min-width: $tablet-width) {
     background-image: linear-gradient(to bottom, $base-color-white 619px, #eaeaea 619px);
@@ -111,10 +109,6 @@
     min-width: 162px;
     margin-bottom: 0;
   }
-
-  // @media (min-width: $desktop-width) {
-  //   margin-bottom: 10px;
-  // }
 }
 
 .showcase__fact:nth-child(1) {
@@ -221,7 +215,6 @@
     max-width: none;
     width: 366px;
     display: flex;
-    // justify-content: space-between;
     text-align: left;
     padding-top: 0;
     gap: 66px;

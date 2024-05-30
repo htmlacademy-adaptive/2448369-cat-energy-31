@@ -73,22 +73,6 @@
   }
 }
 
-// .subscription__title::before {
-//   position: absolute;
-//   content: "";
-//   z-index: -1;
-//   width: 100vw;
-//   height: 2px;
-//   background-color: #68b738;
-//   top: 50%;
-//   transform: translateY(-50%);
-
-//   @media (min-width: $tablet-width) {
-//     right: 0;
-//     box-shadow: 100vw 0 0 0 #68b738;
-//   }
-// }
-
 .subscription__description {
   margin: 0;
   margin-bottom: 24px;
