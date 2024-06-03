@@ -27,20 +27,19 @@
 }
 
 .button--order {
+  display: block;
   grid-column: span 2;
   margin-top: 18px;
 }
 
+.button--secondary {
+  display: block;
+  background-color: #f2f2f2;
+  color: $base-color-text;
 
-.button-subscription {
-  min-height: 56px;
-  font-size: 20px;
-  line-height: 26px;
-
-  @media (min-width: $tablet-width) {
-    min-width: 256px;
-    height: 56px;
-    font-size: 20px;
-    line-height: 26px;
+  &:hover,
+  &:active {
+    background-color: #ebebeb;
+    color: $base-color-text;
   }
 }
